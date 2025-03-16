@@ -47,7 +47,7 @@ class ListPriorityQueue(LinkedList):
 class Heap:
     pass
 
-
+#does not need additional priority queue implementation
 class HeapPriorityQueue(Heap):
     pass
 

@@ -23,8 +23,8 @@ import random
 
 class Node: # (part 1)
     def __init__(self, data, parent=None, left=None, right=None):
-        self.parent = parent
-        self.data = data
+        self.parent = parent 
+        self.data = data 
         self.left = left
         self.right = right
 
@@ -34,10 +34,10 @@ def insert(data, root=None): # (part 1)
 
     while current is not None:
         parent = current
-        if data <= current.data:
+        if data <= current.data: 
             current = current.left
         else:
-            current = current.right
+            current = current.right # current becomes none eventually (leaf position is found) (insertion point)
 
     newnode = Node(data, parent)    
     if root is None:

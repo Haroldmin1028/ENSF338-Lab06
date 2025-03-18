@@ -16,7 +16,7 @@ improve balancing
         and return average and total time
 4. Discuss the results. Which approach is faster? Why? [0.2 pts]
 """
-import sys
+
 import timeit
 import numpy as np
 import random

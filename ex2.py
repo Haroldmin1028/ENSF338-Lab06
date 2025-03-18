@@ -105,6 +105,8 @@ for value in vector1:
 
 overall_avg_time = total_time_for_trials / len(vector1)
 
+print("\nBalanced BST:\n")
+
 print(f"Overall average search time: {overall_avg_time} seconds")
 
 print(f"Total search time for all elements: {total_time_for_trials} seconds")
@@ -122,6 +124,7 @@ for value in vector1:
 
 overall_avg_time = total_time_for_trials / len(vector1)
 
+print("\nSorted Array:\n")
 print(f"Overall average search time: {overall_avg_time} seconds")
 
 print(f"Total search time for all elements: {total_time_for_trials} seconds")

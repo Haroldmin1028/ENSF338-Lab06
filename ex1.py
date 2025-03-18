@@ -120,6 +120,8 @@ print(f"Total search time for all elements: {total_time_for_trials} seconds")
 
 
 """
+Question 4:
+
 The approach used in part 3 is much faster than the approach used in part 2. This is due to the approach in part 3 being 
 much more balanced than in part 2. In part 2, the tree wasn't balanced; every node had a right child and thus had a structure of a linked list.
 The tree for part 2 was at the worst case, meaning it dgenerates into a linked list due to the sorted vector leaving a height of n-1. That is a

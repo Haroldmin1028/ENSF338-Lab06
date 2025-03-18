@@ -59,7 +59,34 @@ def search(data, root):
             current = current.right
     return None
 
-vector1 = [None] * 10000
 
-for i in vector1:
-    print(insert(i))
+
+
+vector1 = []
+
+for i in range(10000):
+    vector1.append(i)
+
+root = None
+
+for value in vector1:
+    if root is None:
+        root = insert(value)
+    else:
+        insert(value, root)
+
+# this will be completely unbalanced, each node has only a right child (goes diagonally right forever)
+
+total_time = 0
+trials = 10
+
+for value in vector1:
+    time1 = timeit.timeit(lambda: search(value, root), number=trials)
+    avg_time_each_element = time1 / trials
+    total_time_for_trials += avg_time_each_element
+
+overall_avg_time = total_time_for_trials / len(vector1)
+
+print(f"Overall average search time: {overall_avg_time} seconds")
+
+print(f"Total search time for all elements: {total_time_for_trials} seconds")

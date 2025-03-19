@@ -61,6 +61,7 @@ def search(data, root): # (part 1)
     return None
 
 
+print("Loading.....")
 
 # Vector (part 2)
 vector1 = []
@@ -88,6 +89,7 @@ for value in vector1:
 
 overall_avg_time = total_time_for_trials / len(vector1)
 
+print("\nUnbalanced\n")
 print(f"Overall average search time: {overall_avg_time} seconds")
 
 print(f"Total search time for all elements: {total_time_for_trials} seconds")
@@ -114,6 +116,7 @@ for value in vector1:
 
 overall_avg_time = total_time_for_trials / len(vector1)
 
+print("\nBalanced:\n")
 print(f"Overall average search time: {overall_avg_time} seconds")
 
 print(f"Total search time for all elements: {total_time_for_trials} seconds")
